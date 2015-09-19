@@ -1,0 +1,3 @@
+Resource errors:
+
+C:\Users\andrei\AndroidStudioProjects\MyFirstApplication\app\build\intermediates\res\debug\layout\message.xml:32: error: Error parsing XML: junk after document element

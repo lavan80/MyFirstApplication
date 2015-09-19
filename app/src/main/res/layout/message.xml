@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/sender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="text1"
+            />
+        <TextView android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="text2"/>
+        <TextView android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="text3"/>
+    </LinearLayout>
+    </ScrollView>
+    <screen>
+        <_content layout="@layout/inbox_messages">
+            <pager> <!-- the id of our ViewPager -->
+                <_page layout="@layout/message">
+                    <sender text="James Gosling" />
+                    <subject text="Fault tolerance" />
+                    <content>In particular, you have to worry about how to build systems that can be robust
+                        and continue operating in the face of partial failures, because most of the systems that
+                        people are building that are of any interest are ones where there's always something
+                        that's broken.</content>
+                </_page>
+                <_page layout="@layout/message">
+                    <sender text="Bjarne Stroustrup" />
+                    <subject text="Complexity" />
+                    <content>The simple fact is that complexity will emerge somewhere, if not in the
+                        language definition, than in thousands of applications and libraries.</content>
+                </_page>
+                <_page layout="@layout/message">
+                    <sender text="Simon Peyton-Jones" />
+                    <subject text="Purity" />
+                    <content>You only have to reason about values and not about state. If you give a function
+                        the same input, it'll give you the same output, every time. This has implications for
+                        reasoning, for compiling, for parallelism.</content>
+                </_page>
+            </pager>
+        </_content>
+    </screen>
+</LinearLayout>
