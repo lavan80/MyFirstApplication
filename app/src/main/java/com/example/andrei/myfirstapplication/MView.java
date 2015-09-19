@@ -51,7 +51,7 @@ public class MView extends ImageView {
 
     @Override
     public void restoreHierarchyState(SparseArray<Parcelable> container) {
-        Log.d("###", "restoreHierarchyState");
+        Log.d("###", "restoreHierarchyState");//
         super.restoreHierarchyState(container);
 
     }
