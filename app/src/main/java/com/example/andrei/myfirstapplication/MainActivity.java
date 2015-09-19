@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //textView = (TextView) findViewById(R.id.text1);
-
+        MFragment mFragment = new MFragment();
     }
 
     /*@Override
