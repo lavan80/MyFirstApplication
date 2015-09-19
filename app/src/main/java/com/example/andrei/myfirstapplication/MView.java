@@ -20,7 +20,7 @@ public class MView extends ImageView {
     }
 
     public MView(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
+        super(context, attrs, defStyleAttr);//
     }
 
     @Override
