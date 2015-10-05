@@ -16,6 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DeepLinkActivity"
+            android:label="@string/title_activity_deep_link" >
+            <intent-filter>
+                <action android:name="ANDROID.INTENT.ACTION.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"
+                    android:host="www.example.com"
+                    android:pathPrefix="/first"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http"
+                    android:host="www.example.com"
+                    />
+            </intent-filter>
+        </activity>
     </application>
-
+    <!--firstdeep-->
 </manifest>
