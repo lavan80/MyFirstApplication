@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
         //textView = (TextView) findViewById(R.id.text1);
         //MFragment mFragment = new MFragment();
         String sjni = stringFromJNI();
+        //hjj
         Log.d("###","sjni="+sjni);
     }
 
